@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تسجيل الدخول والتسجيل</title>
-    <!-- CSS الخاص بـ UIkit -->
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/css/uikit.min.css" />
 </head>
 <body>
@@ -55,7 +55,7 @@
 
             <!-- نموذج التسجيل -->
             <li>
-                <form method="POST" action="{{ route('register') }}">
+                <form method="POST" action="#">
                     @csrf
                     <div class="uk-margin">
                         <label for="register-name" class="uk-form-label">الاسم</label>
@@ -84,10 +84,10 @@
 
 <!-- الفوتر -->
 <footer class="uk-background-muted uk-padding-small uk-text-center">
-    <p>&copy; 2024 شركتك. جميع الحقوق محفوظة.</p>
+    <p>&copy; 2024 اسوار لكاميرات المراقبة وتقنية المعلومات. جميع الحقوق محفوظة.</p>
 </footer>
 
-<!-- JS الخاص بـ UIkit -->
+
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit-icons.min.js"></script>
 

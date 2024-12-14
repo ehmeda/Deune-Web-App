@@ -4,24 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>نظام تسجيل الديون</title>
-    <!-- CSS الخاص بـ UIkit -->
+  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/css/uikit.min.css" />
 </head>
 <body>
 
-
 <!-- الشريط العلوي -->
 <nav class="uk-navbar-container uk-navbar-transparent uk-background-primary uk-light" uk-navbar>
-    <div class="uk-navbar-left">
+    <div class="uk-navbar-left  uk-padding">
         <a href="#" class="uk-navbar-item uk-logo">نظام تسجيل الديون</a>
     </div>
     <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav">
+        <!-- قائمة الروابط للشاشات الكبيرة -->
+        <ul class="uk-navbar-nav uk-visible@m">
+        <li><a href="{{ route('login') }}">تسجيل الدخول</a></li>
+
+            <li><a href="register.html">التسجيل</a></li>
+        </ul>
+        <!-- زر القائمة للشاشات الصغيرة -->
+       
+    </div>
+    <a class="uk-navbar-toggle  uk-padding uk-navbar-left uk-hidden@m" uk-toggle="target: #offcanvas-nav; animation: uk-animation-fade">
+            <span uk-icon="icon: menu"></span>
+        </a>
+</nav>
+
+<!-- قائمة Offcanvas للشاشات الصغيرة -->
+<div id="offcanvas-nav" uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-default">
             <li><a href="login.html">تسجيل الدخول</a></li>
             <li><a href="register.html">التسجيل</a></li>
         </ul>
     </div>
-</nav>
+</div>
 
 <!-- قسم المقدمة -->
 <div class="uk-section uk-section-muted uk-padding">
@@ -56,7 +73,7 @@
                     <p>واجهة بسيطة وسهلة الاستخدام مع دعم كامل للأجهزة المحمولة.</p>
                 </div>
             </div>
-
+        </div>
     </div>
 </div>
 
@@ -78,7 +95,7 @@
     <p>&copy; 2024 نظام تسجيل الديون. جميع الحقوق محفوظة.</p>
 </footer>
 
-<!-- JS الخاص بـ UIkit -->
+
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit-icons.min.js"></script>
 
